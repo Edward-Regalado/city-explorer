@@ -36,7 +36,7 @@ class App extends React.Component {
 
   render() {
     return (
-      <div>
+      <div className="App">
         <h1>City Explorer</h1>
         {this.state.haveWeSearched ?
           <City handleShowSearch={this.handleShowSearch} cityData={this.state.locationData} /> :
