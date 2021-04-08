@@ -3,7 +3,10 @@
 
 ## Overview
 <!-- Provide a high level overview of what this application is and why you are building it, beyond the fact that it's an assignment for this class. (i.e. What's your problem domain?) -->
-This app allows a user to type in a city into the search bar, which brings up a rendered map of the city.
+This app allows users to search for maps of Cities in the US.
+
+## Web request-response cycle
+![cityexplorer](https://user-images.githubusercontent.com/70992980/113965796-e4164580-97e2-11eb-96c0-bfed6e7ef7b5.PNG)
 
 ## Getting Started
 <!-- What are the steps that a user must take in order to build this app on their own machine and get it running? -->
