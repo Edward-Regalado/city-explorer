@@ -6,7 +6,7 @@ class Search extends React.Component {
 
     this.textInput = React.createRef();
   }
-  handleFormSubmitted = (event) => {
+  handleSubmit = (event) => {
     // Search component handle the form weirdness
     event.preventDefault();
     //grab the text box info to send to parent
@@ -15,10 +15,12 @@ class Search extends React.Component {
   }
   render() {
     return (
-      <form onSubmit={this.handleFormSubmitted}>
-        <input type='text' ref={this.textInput} />
-        <input type='submit' />
-      </form>
+      <div>
+        <form onSubmit={this.handleSubmit}>
+          <input type='text' ref={this.textInput} />
+          <button>Explore!</button>
+        </form>
+      </div>
     )
   }
 }
