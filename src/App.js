@@ -16,7 +16,6 @@ class App extends React.Component {
       cityData: {},
       weatherData: []
     };
-    // this.getWeatherData();
   }
   handleFormSubmit = async (event) => {
     event.preventDefault();
@@ -27,16 +26,14 @@ class App extends React.Component {
       this.setState({
         cityData: searchedCity
       });
-      // let weather = weatherData.data[0];
       this.getWeatherData();
     } catch (err) {
       console.log(err);
-      this.setState({ error: `${err.message}: ${err.response.data.error}` });
+      this.setState({ error: `${err.message}: ${err.response.data.error}`});
     }
   }
 
   getWeatherData = async () => {
-    // const weatherData = await axios.get('http://localhost:3002/weather')
     try {
     const weatherData = await axios.get(`${process.env.REACT_APP_BACKEND_URL}/weather`)
     console.log('weather data backend server is working', weatherData);
