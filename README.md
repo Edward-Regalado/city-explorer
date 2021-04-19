@@ -2,36 +2,39 @@
 **Version**: 1.0.0
 
 ## Overview
-<!-- Provide a high level overview of what this application is and why you are building it, beyond the fact that it's an assignment for this class. (i.e. What's your problem domain?) -->
-This app allows users to search for maps of Cities in the US.
+This app allows users to search for a city and retrieve map and weather data for that city.
 
 ## Web request-response cycle
-![cityexplorer](https://user-images.githubusercontent.com/70992980/113965796-e4164580-97e2-11eb-96c0-bfed6e7ef7b5.PNG)
+
+![WRRC](https://user-images.githubusercontent.com/70992980/113965796-e4164580-97e2-11eb-96c0-bfed6e7ef7b5.PNG)
 
 ## Getting Started
-<!-- What are the steps that a user must take in order to build this app on their own machine and get it running? -->
+Use LocationIQ API in a .env file to run this application locally.
 
 ## Architecture
-<!-- Provide a detailed description of the application design. What technologies (languages, libraries, etc) you're using, and any other relevant design information. -->
+[React](https://reactjs.org/)
+
+[Axios](https://www.npmjs.com/package/axios)
+
+[LocationIQ](https://locationiq.com/)
+
+[React-Bootstrap](https://react-bootstrap.github.io/)
 
 ## Change Log
-<!-- Use this area to document the iterative changes made to your application as each feature is successfully implemented. Use time stamps. Here's an example:
-
-01-01-2001 4:59pm - Application now has a fully-functional express server, with a GET route for the location resource. -->
+n/a
 
 ## Credit and Collaborations
-<!-- Give credit (and a link) to other people or resources that helped you build this application. -->
+**Louis Lassegue** collab with Request/Response Cycle of the Web Diagram.
 
-
-Time Estimates
+## Time Estimates
 For each of the lab features, make an estimate of the time it will take you to complete the feature, and record your start and finish times for that feature:
 
-Name of feature: ________________________________
+Name of feature: lab 07
 
-Estimate of time needed to complete: _____
+Estimate of time needed to complete: 4 hours
 
-Start time: _____
+Start time: 8:00
 
-Finish time: _____
+Finish time: 8:00
 
-Actual time needed to complete: _____
+Actual time needed to complete: 10 hours
