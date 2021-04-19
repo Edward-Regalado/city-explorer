@@ -20,9 +20,6 @@ Use LocationIQ API in a .env file to run this application locally.
 
 [React-Bootstrap](https://react-bootstrap.github.io/)
 
-## Change Log
-n/a
-
 ## Credit and Collaborations
 **Louis Lassegue** collab with Request/Response Cycle of the Web Diagram.
 
