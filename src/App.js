@@ -22,7 +22,7 @@ class App extends React.Component {
   handleFormSubmit = async (event) => {
     event.preventDefault();
     console.log(this.state.city);
-    try {
+    try { 
       let cityData = await axios.get(`https://us1.locationiq.com/v1/search.php?key=${process.env.REACT_APP_LOCATIONIQ_KEY}&q=${this.state.city}&format=json`);
       let searchedCity = cityData.data[0];
       this.setState({
@@ -31,7 +31,7 @@ class App extends React.Component {
         lon: cityData.data[0].lon
       });
       this.getWeatherData(cityData.data[0].lat, cityData.data[0].lon);
-      this.getMovieData();
+      this.getMovieData();                                                                               
     } catch (err) {
       console.log(err);
       this.setState({ error: err.message });
