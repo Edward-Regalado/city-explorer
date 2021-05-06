@@ -2,7 +2,7 @@
 **Version**: 1.0.0
 
 ## Overview
-This app allows users to search for a city and retrieve map and weather data for that city.
+This app allows users to search for a city and retrieve maps, weather forecast and movies.
 
 ## Web request-response cycle
 
