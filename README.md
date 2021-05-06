@@ -7,7 +7,7 @@ This app allows users to search for a city and retrieve map and weather data for
 ## Web request-response cycle
 
 ![WRRC](https://github.com/Edward-Regalado/city-explorer/issues/13#issue-878059029)
-https://user-images.githubusercontent.com/70992980/117367501-1d3fe500-ae77-11eb-863d-c2c52defde94.PNG
+![WRRC](https://user-images.githubusercontent.com/70992980/117367501-1d3fe500-ae77-11eb-863d-c2c52defde94.PNG)
 
 ## Getting Started
 Use LocationIQ API in a .env file to run this application locally.
