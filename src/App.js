@@ -16,14 +16,16 @@ class App extends React.Component {
       city: '',
       cityData: {},
       weatherData: [],
-      movieData: []
+      movieData: [],
+      lat: '',
+      lon: ''
     };
   }
   handleFormSubmit = async (event) => {
     event.preventDefault();
     console.log(this.state.city);
     try { 
-      let cityData = await axios.get(`https://us1.locationiq.com/v1/search.php?key=${process.env.REACT_APP_LOCATIONIQ_KEY}&q=${this.state.city}&format=json`);
+      const cityData = await axios.get(`https://us1.locationiq.com/v1/search.php?key=${process.env.REACT_APP_LOCATIONIQ_KEY}&q=${this.state.city}&format=json`);
       let searchedCity = cityData.data[0];
       this.setState({
         cityData: searchedCity,
@@ -40,7 +42,7 @@ class App extends React.Component {
 
   getWeatherData = async (lat, lon) => {
     try {
-      let weatherData = await axios.get(`${process.env.REACT_APP_BACKEND_URL}/weather`, {
+      const weatherData = await axios.get(`${process.env.REACT_APP_BACKEND_URL}/weather`, {
         params: {
           lat: lat,
           lon: lon
@@ -58,7 +60,7 @@ class App extends React.Component {
 
   getMovieData = async () => {
     try {
-      let movieData = await axios.get(`${process.env.REACT_APP_BACKEND_URL}/movies`, {
+      const movieData = await axios.get(`${process.env.REACT_APP_BACKEND_URL}/movies`, {
         params: {
           city: this.state.city,
         }
