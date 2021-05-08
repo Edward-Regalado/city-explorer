@@ -1,0 +1,23 @@
+.movieBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  font-family: cursive;
+  font-size: 1.3rem;
+  margin-bottom: 30px;
+  border-radius: 20px;
+}
+
+.movieBox img {
+  padding: 30px;
+  background-color: lightskyblue;
+}
+
+.movieBox:hover {
+  background-color: lightgreen;
+}
+
+
+

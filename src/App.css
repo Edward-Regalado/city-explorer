@@ -23,15 +23,48 @@ h2 {
   text-shadow: grey 1px 1px 5px;
 }
 
-h1 {
-  color: green;
+.box h1 {
+  color: black;
   text-shadow: grey 1px 1px 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: cursive;
+  margin-bottom: 50px;
+  font-size: 5rem;
 }
 
 img {
-  margin: 30px;
   border: 1px solid black;
   border-radius: 20px;
   box-shadow: grey 1px 5px 20px;
+  width: 90%;
+}
+
+img:hover {
+  background-color: lightgreen;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-body {
+  background-color: lightskyblue;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: black;
+  border-radius: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.card-body:hover {
+  background-color: lightgreen;
 }
 

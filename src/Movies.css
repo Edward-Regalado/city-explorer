@@ -1,0 +1,11 @@
+.movieContainer {
+   display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+ text-transform: uppercase;
+ background-color: lightgray;
+ border: black;
+ border-radius: 20px;
+ margin-top: 10px;
+}
