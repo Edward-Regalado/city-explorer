@@ -79,23 +79,22 @@ class App extends React.Component {
 
   render() {
     return (
-      <>
+      <div className="box">
         <h1>City Explorer</h1>
         <Container>
-          <Form onSubmit={this.handleFormSubmit}>
+          <Form className="form" onSubmit={this.handleFormSubmit}>
             <Form.Group controlId="city">
-              <Form.Label>City name</Form.Label>
-              <Form.Control value={this.state.city} onInput={e => this.setState({ city: e.target.value })} placeholder="enter city name"></Form.Control>
+              <Form.Label>City Name</Form.Label>
+              <Form.Control value={this.state.city} onInput={e => this.setState({ city: e.target.value })} placeholder="click here to enter City"></Form.Control>
             </Form.Group>
             <Button variant="success" type="submit">Explore!</Button>
           </Form>
           {this.state.error ?
             <Alert variant="danger">
               <Alert.Heading>Error Message: {this.state.error}</Alert.Heading></Alert> : ''}
-          {/* <h2>{this.state.error}</h2> : ''} */}
           {this.state.cityData.lat !== undefined ?
             <>
-              <Card bg="light" border="warning">
+              <Card>
                 <Card.Body>
                   <Card.Title>{this.state.cityData.display_name}</Card.Title>
                   <Card.Text>{this.state.cityData.lat}, {this.state.cityData.lon}</Card.Text>
@@ -107,7 +106,7 @@ class App extends React.Component {
             </>
             : ''}
         </Container>
-      </>
+      </div>
     );
   }
 }

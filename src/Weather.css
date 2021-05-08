@@ -1,0 +1,18 @@
+.weatherContainer {
+  font-size: large;
+  background-color: lightgray;
+  border-radius: 20px;
+  font-weight: 500;
+  text-transform: capitalize;
+  font-family: cursive;
+}
+
+.description, .date {
+  background-color: lightgreen;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.description:hover, .date:hover {
+  background-color: lightpink;
+}

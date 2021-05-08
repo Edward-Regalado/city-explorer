@@ -1,0 +1,7 @@
+.weatherDayContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: lightskyblue;
+  justify-content: space-around;
+}
